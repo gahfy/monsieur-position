@@ -1,0 +1,26 @@
+{
+  "actions": [
+    {
+      "description": "Default Welcome Intent",
+      "name": "MAIN",
+      "fulfillment": {
+        "conversationName": "bearingDistance"
+      },
+      "intent": {
+        "name": "actions.intent.MAIN",
+        "trigger": {
+          "queryPatterns": [
+            "parler avec monsieur position"
+          ]
+        }
+      }
+    }
+  ],
+  "conversations": {
+    "bearingDistance": {
+      "name": "bearingDistance",
+      "url": "https://us-central1-monsieur-position.cloudfunctions.net/gHome"
+    }
+  },
+  "locale":"fr"
+}
